@@ -4,12 +4,24 @@ import os
 import sys
 
 
-# Function and variable names should be lowercase with words separated by underscores.
-def generate_random_number():
-    return random.randint(1, 100)
+def add_numbers(num1, num2):
+    """
+    This function takes two numbers as input and returns their sum.
+    
+    Args:
+        num1 (int or float): The first number.
+        num2 (int or float): The second number.
+    
+    Returns:
+        int or float: The sum of num1 and num2.
+    """
+    result = num1 + num2
+    return result
 
-# Use 4 spaces for indentation (no tabs).
-if __name__ == "__main__":
-    number = generate_random_number()
-    print(f"Generated random number: {number}")
+# Example usage:
+num1 = 5
+num2 = 3
+sum_result = add_numbers(num1, num2)
+print(f"The sum of {num1} and {num2} is {sum_result}")
+
 
